@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="public/style.css" />
+    <title>Course Alert</title>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-wrapper" id="modal-wrapper">
+        <div class="modal-body text-center">
+          <div class="modal-heading">
+            <img src="/public/Skillsfund.png" alt="" />
+            <span id="close">x</span>
+          </div>
+          <h4 class="mt-2">New Course Alert</h4>
+          <p>
+            <b>Awards</b>: Two full scholarships avaliable and tuition
+            deferment/installments for any who qualify.
+          </p>
+          <div class="mt-2">
+            <a
+              class="link"
+              target="_blank"
+              href="https://scholarx.typeform.com/to/xfBR3C"
+              rel="no-opener no-referrer"
+              >Check out the offer</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let modal = document.querySelector(".modal");
+      let closeAction = document.querySelector("#close");
+
+      // on page load
+      modal.style.display = "block";
+      closeAction.onclick = function (event) {
+        event.preventDefault();
+        modal.style.display = "none";
+      };
+    </script>
+  </body>
+</html>

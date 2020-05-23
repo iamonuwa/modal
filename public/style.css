@@ -1,0 +1,81 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+.modal {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.modal-body {
+  background-color: #fefefe;
+  margin: auto;
+  width: 80vw;
+  padding: 20px;
+}
+
+.modal-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-heading > img {
+  text-align: center;
+}
+
+.modal-heading > span {
+  cursor: pointer;
+  position: relative;
+  top: -30px;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 48em) {
+  .modal-body {
+    width: 30vw;
+  }
+}
+
+.link {
+  border: 1px solid #f7faff;
+  border-radius: 1em;
+  padding: 1rem;
+  text-decoration: none;
+  color: #000000;
+  background-color: #f7faff;
+}
+
+img {
+  width: 50%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
